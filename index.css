@@ -1,0 +1,100 @@
+.navbar{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    text-decoration: none;
+    background-color: orange;
+    width: 100%;
+
+}
+.navbar>a{
+   color:white;
+   font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+#container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto; 
+     gap: 20px;
+    text-align: center;
+}
+#container>div{
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   height: auto;
+   width: 300px;
+   border-radius: 20px;
+   color: black;
+   background-color: white;
+   font-weight: bold;
+}
+.imgdiv{
+width: 100%;
+}
+
+.wish{
+    height: 30px;
+    margin-top: 10px;
+}
+.div1{
+   display: flex; 
+   justify-content: space-around;
+}
+.img{
+    width:100%
+}
+.page{
+    text-align: center;
+    display: flex;
+    border: 1px solid red;
+}
+/* Medium screens */
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+    #container{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto; 
+         gap: 20px;
+        text-align: center;
+    }
+    #container>div{
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       height: auto;
+       width: 300px;
+       border-radius: 20px;
+       color: black;
+       background-color: white;
+       font-weight: bold;
+    }
+    .navbar{
+        width:100%
+    }
+}
+
+/* small screens */
+@media only screen and (min-width: 70px) and (max-width: 420px) {
+    #container{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto; 
+         gap: 20px;
+        text-align: center;
+    }
+    #container>div{
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       height: auto;
+       width: 300px;
+       border-radius: 20px;
+       color: black;
+       background-color: white;
+       font-weight: bold;
+    }
+    .navbar{
+        width:100%
+    }
+}
